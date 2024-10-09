@@ -35,6 +35,8 @@ class Conference
         $this->comments = new ArrayCollection();
     }
 
+   
+
     public function getId(): ?int
     {
         return $this->id;
@@ -69,7 +71,7 @@ class Conference
         return $this->isInternational;
     }
 
-    public function setInternational(bool $isInternational): static
+    public function setIsInternational(bool $isInternational): static
     {
         $this->isInternational = $isInternational;
 
